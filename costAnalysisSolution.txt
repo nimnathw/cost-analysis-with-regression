@@ -1,0 +1,18 @@
+Solution to the costAnalysis question:
+
+Fixed cost for production below 8500: 2,800,352
+Fixed cost for production above 8500: 4,303,369
+Variable cost (per unit): 1000
+
+Analysis:
+You can analyze using Excel/LibreOffice, SQL, R or any other language/software
+
+Excel/Libreoffice:
+1. Open, then Save as a new file
+2. Clean dataset – correct errors, remove extreme values/ null values
+3. To get a scatter plot: Select all cells with values> Insert Chart > Select Scatter
+Notice that there are two groups (output values below 8500 and output values above 8500)
+4. Sort data according to ‘output’ values: Data> Sort Ascending(select Extend Selection)
+5. Run regression for the two groups separately
+6. To estimate the Variable Cost and Fixed Cost: Select all relevant cells > Data> Statistics> Regression
+Intercept estimates the fixed cost, and the coefficient estimates the variable cost
